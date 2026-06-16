@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>聯絡我 | 江冠佑的個人網站</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">江冠佑 | Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">首頁</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">關於我</a></li>
+          <li class="nav-item"><a class="nav-link" href="portfolio.html">作品集</a></li>
+          <li class="nav-item"><a class="nav-link" href="skills.html">技能介紹</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">聯絡我</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-5 pt-5">
+    <h2 class="text-center fw-bold mb-5">聯絡我</h2>
+    <div class="row g-4">
+      <div class="col-md-5">
+        <div class="card shadow-sm p-4 h-100 border-custom">
+          <h4>📬 聯絡資訊</h4>
+          <ul class="list-unstyled mt-3">
+            <li class="mb-2"><strong>姓名：</strong>江冠佑</li>
+            <li class="mb-2"><strong>學號：</strong>114111221</li>
+            <li class="mb-2"><strong>Email：</strong>114111221@student.edu.tw</li>
+            <li class="mb-2"><strong>電話：</strong>0912-345-678</li>
+          </ul>
+          <button class="btn btn-custom mt-3" data-bs-toggle="modal" data-bs-target="#contactModal">查看注意事項</button>
+        </div>
+      </div>
+      <div class="col-md-7">
+        <div class="card shadow-sm p-4">
+          <h4>📝 留言表單</h4>
+          <form class="mt-3">
+            <div class="mb-3">
+              <label for="name" class="form-label">您的姓名</label>
+              <input type="text" class="form-control" id="name" placeholder="請輸入姓名">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">留言內容</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="請輸入您的訊息..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-custom">送出訊息</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="modal fade" id="contactModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">注意事項</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">本表單僅為期末專案練習，不會實際寄送郵件。感謝您的填寫！</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-white text-center py-3 mt-auto">
+    <p class="mb-0">&copy; 2026 江冠佑 (114111221). All Rights Reserved.</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
